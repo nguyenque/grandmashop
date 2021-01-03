@@ -80,7 +80,36 @@ body {
   background-attachment: fixed;
   position: relative;
 }
-
+/* cart */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  width: 0;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all .5s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+.cart-item-price {
+  font-size: 0.8rem;
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
 .banner {
   color: var(--mainWhite);
   margin-top: -4rem;
@@ -162,4 +191,32 @@ body {
 }
 .store-item-icon:hover {
   color: var(--mainWhite);
+}
+
+/* services */
+.services {
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.5) ), url(../img/servicesBcg.jpeg) center/cover fixed no-repeat;
+}
+.service-title {
+  letter-spacing: .5rem;
+}
+.service-text {
+  word-spacing: 0.5rem;
+}
+
+/* footer */
+.footer-title {
+  background: var(--mainBlack);
+}
+.footer-icon {
+  color: var(--mainWhite);
+  font-size: 1.5rem;
+  transition: all .5s ease-in-out;
+}
+.footer-icon:hover {
+  color: var(--mainPink);
+}
+.footer-contact {
+  background: var(--mainGrey);
 }
